@@ -1,0 +1,345 @@
+<?PHP
+//sticker message
+$sticker['m1']='如果本物品找到，使用此密码来找到其真正主人';
+$sticker['m2']='在';
+
+
+
+// flexgrid
+$grid['title']="我的密码列表";
+$grid['name']="姓名";
+$grid['code']="密码";
+$grid['status']="状态";
+$grid['date']="创建日期";
+$grid['last_update']="最后更新";
+$grid['edit']="编辑";
+$grid['view']="查看";
+$grid['get_label']="获取标签";
+$grid['move']="移动物主身份";
+$grid['sender']="发送者姓名";
+$grid['send_date']="发送日期";
+$grid_r['title']="已接收密码"; 
+
+
+// General
+$general['page_title'] = '在线失物招领'; 
+$general['meta_keywords']="失物招领, 丢失, 追踪, 找到, itrack, 免费在线失物招领";
+$general['meta_description']="免费在线失物招领服务, 是一种减少个人物品遗失的方法";
+//$general['logo_title']="在线失物招领";
+$general['menu_home']="主页";
+$general['menu_register']="注册";
+$general['menu_service']="服务";
+$general['menu_contact']="联系";
+$general['copyright']="版权所有，不得盗用。";
+
+// Login general
+$login_general['main']="主题";
+$login_general['codes']="追踪密码";
+$login_general['profile']="设置";
+$login_general['contact']="联系人";
+$login_general['logout']="退出";
+$login_general['welcome']="欢迎 ... ";
+$login_general['rec1']="您已经接收到"; 
+$login_general['rec2']="密码, 按";
+$login_general['rec3']=" 这里 ";
+$login_general['rec4']="激活";
+$login_general['your_credit_is']="您的密码是";
+
+// change password
+$change['change_message']="请输入新密码"; 
+
+//index file
+$index['track_image']="track_en.png";
+$index['message_send_message']="您的消息已成功发送";
+$index['message_fail_message']="发送消息失败，请稍后再试";
+$index['enter_email_message']="请输入邮箱地址";
+$index['send_password']="发送密码";
+$index['send_owner_message']="联系物主";
+$index['invalid_username']="用户名或密码无效";
+$index['forgot_password']="忘记密码?";
+$index['error_sending_message']="发送消息过程中出错, 请稍后再试!!";
+$index['successful_sending_message']="您的消息已成功发送, 我们将尽快联系您";
+$index['contact_paragraph']="欢迎来到我们的联络网关. 想了解进一步消息或者有反馈意见请联系我们";
+$index['invalid_email']="您输入的邮箱地址无效!!";
+
+// register
+$register['registered_user']="您已注册，请登录";
+$register['registration_complete']="注册已成功完成";
+$register['non_similar_passwords']="密码不相符";
+$register['registration_data']="注册数据"; 
+$register['contact_information']="联系信息";
+$register['login_information']="登录信息";
+$register['select_country']="选择国家...";
+$register['select_language']="选择语言...";
+$register['confirm_registration_message']="请确认注册信息:";
+$register['new_username_exist']="您输入的用户名已被使用，请选择其他用户名";
+$register['new_email_exist']="您输入的邮箱已被占用，请选择其他邮箱";
+
+// main user
+$main['successful_contact_message']="谢谢您选择我们的服务。您的联系信息已成功发送，我们会尽快联系您。";
+$main['unsuccessful_contact_message']="发送请求失败，请稍后再试!!";
+
+// edit_data
+$edit['wrong_pass']="密码错误!!";
+$edit['unsimilar_pass']="新密码认证出错, 您输入的密码不相同!!";
+$edit['edit_profile']="编辑个人主页";
+$edit['label1']="姓名和性别";
+$edit['label2']="联系信息";
+$edit['privacy_setting']="隐私设置";
+$edit['change_password']="更改密码";
+$edit['block_account']="账户管理";
+$edit['profile_management']="主页管理";
+$edit['password_change_message']="您的密码已成功修改";
+$edit['exist_email']="您更改的邮箱已存在并被其他用户使用!! ";
+$edit['exist_user']="您更改的邮箱已存在并被其他用户使用!! ";
+
+
+
+// privacy
+$privacy['privacy_paragraph']="隐私设置：请选择您的信息类型，当别的用户找到您丢失的物品想联系您时用。 如果您没有选择任何信息类型, 那么我们的网站是用户可以在不知道您的邮箱的情况下联系您的唯一途径。 ";
+
+// account activation
+$activation['activated_message']="您的账户处于激活状态, 输入密码关闭";
+$activation['blocked_message']="您的账户处于关闭状态, 输入密码激活";
+$activation['block_question']="您确定要关闭账户吗?";
+$activation['activate_question']="您确定要激活账户吗?";
+$activation['successful_activation']="您的账户已成功激活.";
+$activation['successful_block']="您的账户已关闭";
+$activation['title']="账户管理";
+
+// Show data
+$show['item_list_message']="您的物品代码列表： 双击物品以获得更多信息、编辑或更改物品所有人为其他用户.";
+$show['item_details']="物品详细信息";
+$show['pending_message1']="该物品已经被您转移到:";
+$show['pending_message2']=", 在您没有取消转移请求前不可以编辑或使用.";
+$show['send_item_message']="请输入目标用户的邮箱以移动以下物品的所有权:";
+$show['cancel_transfer_message']="您确定要取消转移至:";
+$show['confirm_transfer_message']="您确定要转移代码所有权至:";
+$show['modify_item_message']=" 物品代码";
+$show['updated_item_message']="物品信息已成功更新";
+$show['add_code']="添加物品";
+$show_r['no_items']="您的收件箱没有任何物品";
+$show_r['confirm_acceptance']="您确定想接受这个代码吗: ";
+$show_r['reject_item']="您确定要拒绝以下已接收代码吗:";
+$show_r['accept_all']="您确定要接受所有已收到的代码吗";
+$show_r['reject_all']="您确定要拒绝所有已收到的代码吗";
+$show['pending']="不能进行该操作，因为物品所处的状态是：";
+$show['no_owners_details']="您可以点击‘联系主人’来联系物品主人";
+
+// add code
+$add['add_code_paragraph']="请填写您想要得到代码的物品信息";
+$add['image']="图像 (可选)";
+$add['no_credit_message']="您没有足够的余额去获取新代码";
+$add['verify_item_message']="请核实物品信息并继续";
+$add['your_code']="您的代码";
+$add['is']="是";
+$add['credit_request']="信用代码请求";
+$add['credit_message_body1']="代码信用请求";
+$add['credit_message_body2']="发送者 :";
+$add['credit_message_body3']="邮箱:";
+$add['credit_message_body4']="请求的信用:";
+$add['credit_message_body5']="评论:";
+$add['error_sending_message']="发送请求失败, 请稍后再试!!";
+$add['successful_sending_message']="您的请求已成功发送, 我们会很快联系您并处理您的请求.";
+$add['manage_codes']="管理代码";
+$add['charge_your_credit']="充值";
+$add['ask_for_credit']="获取信用代码";
+$add['ask_for_credit_message']="代码信用请求";
+$add['no_credit']="余额不足";
+$add['register_your_own_code']="注册您自己的代码";
+
+
+$service['title1']="在线失物招领 ";
+$service['title2']=" ......................................................... 为了友好和合作的生活";
+$service['contents1']="使用我们的服务，您可以减少物品丢失的几率. 如何做到? 拾到您丢失的物品的人会通过我们的网站联系您.</br>
+基本原理是注册我们的网站为您想要追踪的物品获取一个独一无二的代码，我们网站将会为您提供一个漂亮的、不同尺寸大小的标签，用于贴到您的物品上. 
+标签包含一个追踪代码和我们网站的链接. 如果有人找到您的物品，可以很容易的通过我们的安全网络接口联系您."; 
+$service['contents2']="系统为您提供不同尺寸的标签以方便用于不同的目的. 把标签打印出来并且贴到可能丢失的物品上，这样如果物品丢失，拾到物品的人就可以很容易联系到您.";                                                                                                                                                  
+$service['our_service']="我们的服务";
+$service['labels']="免费标签设计";
+$service['register']="(现在注册)";
+
+
+//
+$get_sticker['show_label']=" 您的浏览器将要在新的页面打开PDF文件或者下载文件到本地"; 
+
+//
+$special['question_mark']="?";
+
+//
+$button['cancel']="取消";
+$button["send"]="发送";
+$button["home"]="主页";
+$button["send_email"]="发送邮件";
+$button["back"]="后退";
+$button["log_in"]="登录";
+$button["register"]="注册";
+$button["update"]="更新";
+$button["change"]="更改";
+$button["confirm"]="确定";
+$button["main"]="主体";
+$button["move_to_other"]="移动到其他用户";
+$button["edit"]="编辑";
+$button["get_sticker"]="获取标签";
+$button["cancel_move"]="取消移动请求";
+$button["proceed"]="继续";
+$button["save"]="保存";
+$button["activate"]="激活";
+$button["get_code"]="得到代码";
+$button["continue"]="继续";
+$button["add_credit"]="添加信用";
+$button["enter_tracking_code"]="搜索代码";
+$button["more_details"]="更多信息";
+$button["accept_all"]="接受全部";
+$button["reject_all"]="拒绝全部";
+$button["accept"]="接受代码";
+$button["reject"]="拒绝代码";
+$button["activate"]="激活账户";
+$button["block"]="关闭账户";
+$button['get_pdf']="获取标签";
+$button['contact_owner']="联系主人";
+$button['show_item']="显示物品";
+$button['items_table']="显示我的代码表";
+
+//
+$alert['item_added']="代码已成功添加";
+
+//
+$label["email"]="邮箱";
+$label["message"]="消息";
+$label["name"]="姓名";
+$label["description"]="描述";
+$label["owner_name"]="主人姓名";
+$label["owner_phone"]="主人电话";
+$label["owner_email"]="主人邮箱";
+$label["owner_address"]="主人地址";
+$label["username"]="用户名";
+$label["password"]="密码";
+$label["current_password"]="当前密码";
+$label['surename']="姓";
+$label["male"]="男";
+$label["female"]="女";
+$label["phone"]="电话";
+$label["country"]="国家";
+$label["city"]="城市";
+$label["address"]="地址";
+$label["reg_username"]="用户名";
+$label["re_password"]="再输入密码";
+$label["subject"]="主题";
+$label["write_new_password"]="输入新密码";
+$label["re_write_new_password"]="重新输入新密码";
+$label["track_code"]="追踪代码";
+$label["select_another_image"]="选择其他图像";
+$label["remove_image"]="清除物品图像";
+$label["image"]="图像 (可选)";
+$label['add_credit_code']="添加信用代码";
+$label["subject"]="主题";
+$label['num_codes']='请求的代码数量';  
+$label['comments']="评论";
+$label['language']="语言";
+$label['status']="状态";
+$label['error']="错误";
+$report['error_move_to_your_email']="不能向自己移动代码!!";
+$label['other_city']="其他城市...";
+$label['gender']="性别";
+$label['not_found']="物品没有找到";
+$label['login']="登录";
+$label['contact_us']="联系我们";
+$label['update_profile']="更新个人信息";
+$label['move_code']="移动代码";
+$label['edit_item']="编辑物品";
+$label['add_item']="一件物品";
+$label['register_code']="注册自己的代码";
+$label['ask_credit']="请求信用";
+$label['received_code']="接收到的代码";
+$label['item_name']="物品名称";
+$label['item_description']="物品描述";
+$label["owner_details"]="主人详情";
+
+//
+$reports['image_size_big']=' 图像尺寸过大.';
+$reports['invalid_image_format']="图像格式无效";
+$reports['no_credit']='您没有足够的余额获取新代码, 请联系服务提供商!!';
+$reports['item_added']='物品已成功添加';
+$reports['invalid_code']='您搜索的代码无效';
+$reports['blocked_owner']='主人已关闭账户，没有所输入的代码信息!';
+$reports['not_valid_token_code']='输入的代码无效.';
+$reports['credit_added']='信用已成功添加';
+$reports['updated']='物品信息已成功更新.';
+$reports['not_active']='您不能移动改代码，因为该代码没有激活';
+$reports['invalid_user']='错误 .. 您在试图转移代码所有权至无效用户. 请检查目标用户邮箱.';
+$reports['blocked_user']='错误 .. 您在试图转移代码所有权至已关闭账号用户. 请检查目标用户状态.';
+$reports['yourself']='您不能移动代码到自己!!';
+$reports['sent_request']='您已经成功发送代码转移请求, 经过目标用户同意后即可完成处理';
+$reports['cancel_transfer']='您已经成功取消代码转移';
+$reports['received_accepted']='已成功接受接收到的代码';
+$reports['no_right']='您没有权利接受移动此代码!!';
+$reports['accept_codes']='您已经成功接受所有接收到的代码';
+$reports['canceled_codes']='您已经成功取消所有代码转移请求';
+$reports['privacy_updated']='隐私设置已成功修改';
+$reports['status_changed']='您已经成功修改状态';
+$reports['Invalid_query']='无效的数据库查询!!';
+$reports['error_image']='上传图像出错!';
+$reports['no_right2']='您没有权利取消代码移动!!';
+$report['error_move_to_your_email']="您不能移动代码至自己!!";
+$reports['cancel_image_upload']=", 选取的图像将会被取消，但是物品将会添加. 您可以通过在追踪代码表里选择物品来更改图像";
+
+// for uFlex
+$uFlex['1']="新用户注册失败";
+$uFlex['2']= "无法更改"; 
+$uFlex['3']= "账户无法激活";
+$uFlex['4']= "我们没有此邮箱的账户"; 
+$uFlex['5']= "密码无法更改.请求无效.";
+$uFlex['6']= "通过缓存登录失败";
+$uFlex['7']= "错误的用户名或密码";
+$uFlex['8']= "您的账号尚未激活. 请查看邮件中的说明";
+$uFlex['9']= "您的账号已被取消激活,请联系管理员";
+$uFlex['10']= "错误的用户名或密码";
+$uFlex['11']= "验证码无效";
+$uFlex['12']= "您的身份无法确认";
+$uFlex['13']= "保存确认请求失败";
+$uFlex['14']= "您需要重置密码然后登录";
+$uFlex['Password_Changed']="密码已更改";
+$uFlex["No_need_update"]="数据与未更改前相同，无需更新!";
+$uFlex["information_updated"]="信息已更新!";
+$uFlex["information_not_updated"]="更新信息时出现未知错误, 请稍后再试!";
+
+$mail_m['password_retrieve']="失物招领";
+$mail_m['password_retrieve_message']="亲爱的用户\n 您已经申请了要求得到失物招领在线的新密码. \n 为了设置新密码, \n 请将以下链接复制粘贴到您的浏览器.\n";
+$reports['no_enough_credits']="您没有足够的余额来接受所有接收到的代码";
+$button["send_request"]="发送请求";
+$register['registration_error']="注册过程中出错";
+$reports['user_blocked_add_credit1']="亲爱的用户, 您本次已连续输错5次信用代码, 您的账户已被暂时禁止添加信用, 在 "; 
+$reports['user_blocked_add_credit2']=" 小时:分钟之后, 您将可以进入添加信用页面."; 
+$activation['activation_title']="账户激活";
+$activation['complete']="您的账户已成功激活.";
+$activation['error']="激活出错.";
+$activation['wrong_hash']="激活链接不正确.";
+$activation['activation_mail_message']="亲爱的用户\n 欢迎来到失物招领在线. \n 完成注册的最后一步是通过复制粘贴\n 以下链接到您的浏览器以激活您的账户\n";
+$activation['activation_mail_subject']="失物招领激活";
+$activation['activation_send']="感谢您的注册, 账户激活代码已发送到您的邮箱.";
+$activation['activation_send_error']="感谢您的注册. 很遗憾，发送账户激活码出错. 请将错误报告给我们并告诉我们您的邮箱.";
+$reports['not_activated_account']="您的账户尚未激活. 请查看邮箱激活账户.";
+$reports['account_has_been_deactivated']="您的已被系统取消激活. 请联系我们获取更多信息.";
+$reports['account_has_been_deactivated_by_request']="由于密码重置或者重新请求激活，您的账户已被冻结";
+$reports['invalid_user_or_password']="用户名或密码无效.";
+$label["charge_credit"]="充值";
+//
+$message['not_available']="Not Available";
+$status['active']="active";
+$status['pending']="pending";
+$label['enter_track_code']="Enter track code here:";
+$label['enter_captcha_code']="Enter above code here:";
+$captcha['refresh1']="Can't read the image? click";
+$captcha['refresh2']="here";
+$captcha['refresh3']="to refresh";
+$captcha['no_match']="The captcha code does not match!! Try again";
+$button["show_details"]="Show More Details";
+$label['more_details']="More Details";
+$reports['not_authorized']="You are not authorized to perform this process.";
+$service['acknowledgment']="Acknowledgment";
+//
+//Please, don't translate the followings
+$dir['dir']="left";
+$general['logo_title']="nline lost & found";
+?>

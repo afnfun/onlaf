@@ -1,0 +1,328 @@
+<?PHP
+//
+$sticker['m1']='Per identificare correttamente il legittimo proprietario di questo oggetto, applicare questo codice';
+$sticker['m2']='chiocciola';
+//
+$grid['title']="Elenco dei miei codici";
+$grid['name']="Nome";
+$grid['code']="Codice";
+$grid['status']="Stato";
+$grid['date']="Data creazione";
+$grid['last_update']="Ultima modifica";
+$grid['edit']="Modifica";
+$grid['view']="Mostra";
+$grid['get_label']="Ottieni etichetta";
+$grid['move']="Cambio di proprietà";
+$grid['sender']="Nome del mittente";
+$grid['send_date']="Data di invio";
+$grid_r['title']="Codici ricevuti"; 
+// 
+$general['page_title'] = 'Online Lost & Found'; 
+$general['meta_keywords']="smarrire, smarrito, smarrita, smarriti, smarrite, rintracciare, recuperare, perdere, perso, persa, persi, perse, trovare, trovato, trovata, trovati, trovate, itrack, itracking, gratuito, servizio, online, lost and found";
+// //
+$general['meta_description']="Online Lost and Found è un servizio gratuito che ti permette di metterti in contatto con persone che ritrovano oggetti da te persi. Questo riduce la possibilità di perdere oggetti che possiedi: in città, al lavoro, durante un viaggio o al verificarsi di una calamità.";
+$general['menu_home']="Home";
+$general['menu_register']="Registrazione";
+// //
+$general['menu_service']="Informazioni";
+$general['menu_contact']="Contatti";
+$general['copyright']="Copyright (c) 2011 Tutti i diritti riservati.";
+//
+$login_general['main']="Principale";
+$login_general['codes']="Codici di tracciabilità";
+$login_general['profile']="Impostazioni";
+$login_general['contact']="Contatti";
+$login_general['logout']="Logout";
+$login_general['welcome']="Benvenuto ...";
+$login_general['rec1']="hai ricevuto"; 
+$login_general['rec2']="codice, premere";
+$login_general['rec3']=" qua ";
+$login_general['rec4']="per attivare";
+$login_general['your_credit_is']="Disponi di crediti: ";
+//
+$change['change_message']="Inserire una nuova password"; 
+//
+$index['message_send_message']="Messaggio inviato con successo";
+$index['message_fail_message']="Errore nell'invio del messaggio, per favore riprova più tardi";
+$index['enter_email_message']="Inserisci il tuo indirizzo email";
+$index['send_password']="Invia password";
+$index['send_owner_message']="Contatta proprietario dell'oggetto";
+$index['forgot_password']="Recupera password";
+$index['error_sending_message']="Errore nell'invio del messaggio, per favore riprova più tardi!!";
+$index['successful_sending_message']="Messaggio inviato con successo, ti contatteremo il prima possibile";
+$index['contact_paragraph']="Benvenuti nella nostra area contatti. Per favore non esitate a contattarci per qualsiasi informazione o feedback";
+$index['invalid_email']="Hai inserito un indirizzo email non valido!!";
+//
+$register['registered_user']="Utente registrato! Puoi effettuare il login";
+$register['registration_complete']="Registrazione completata con successo";
+$register['non_similar_passwords']="Le password inserite non coincidono";
+$register['registration_data']="Registrazione dei dati"; 
+$register['contact_information']="Informazioni di contatto";
+$register['login_information']="Informazioni di login";
+$register['select_country']="Seleziona paese ...";
+$register['select_language']="Seleziona lingua ...";
+$register['confirm_registration_message']="Per favore conferma che le informazioni inserite sono corrette:";
+$register['new_username_exist']="Username non disponibile, per favore inserirne un altro";
+$register['new_email_exist']="Indirizzo email già registrato, per favore inserirne un altro";
+//
+$main['successful_contact_message']="Grazie per aver scelto il nostro servizio. Il tuo messaggio è stato inviato con successo, ti contatteremo il prima possibile.";
+$main['unsuccessful_contact_message']="Errore nel'linvio della richiesta, per favore riprovare più tardi!!";
+//
+$edit['wrong_pass']="Password errata !!";
+$edit['unsimilar_pass']="Le password inserite non coincidono!!";
+$edit['edit_profile']="Modifica Profilo";
+$edit['label1']="Nome & Sesso";
+$edit['label2']="Informazioni di contatto";
+$edit['privacy_setting']="Impostazioni sulla privacy";
+$edit['change_password']="Cambia password";
+$edit['block_account']="Gestione account";
+$edit['profile_management']="Gestione profilo";
+$edit['password_change_message']="La password è stata cambiata con successo";
+$edit['exist_email']="Il tuo indirizzo email esiste già o è stato assegnato ad un altro utente!! Non si può usare in questo momento";
+$edit['exist_user']="Il tuo indirizzo email esiste già o è stato assegnato ad un altro utente!! Non si può usare in questo momento";
+// 
+$privacy['privacy_paragraph']="Impostazioni sulla privacy, seleziona la casella delle categoria di informazioni che vuoi rendere accessibile all'utente che ritroverà un tuo oggetto smarrito. Se non si seleziona nessuna opzione il nostro sito web permetterà all'utente che ti vuole contattare, di farlo tramite messaggio (senza fornirgli la tua email).";
+//
+$activation['activated_message']="Il tuo account è Attivo, scrivi la tua password se vuoi bloccarlo";
+$activation['blocked_message']="Il tuo account è Bloccato, scrivi la tua password se vuoi attivarlo";
+$activation['block_question']="Sei sicuro di voler BLOCCARE il tuo account?";
+$activation['activate_question']="Sei sicuro di voler ATTIVARE il tuo account?";
+$activation['successful_activation']="Il tuo account è stato attivato con successo";
+$activation['successful_block']="Il tuo account è stato bloccato con successo";
+$activation['title']="Gestione dell'account";
+//
+$show['item_list_message']="La lista dei codici dei tuoi oggetti, doppio click sull'oggetto per ottenere maggiori dettagli, modifica o passa la proprietà ad un altro utente.";
+$show['item_details']="Dettagli oggetto";
+$show['pending_message1']="Questo oggetto è stato trasferito a te:";
+$show['pending_message2']=", tu non lo puoi modificare o utilizzare prima di aver cancellato la richiesta di trasferimento.";
+$show['send_item_message']="Per favore, inserire l'indirizzo email dell'utente destinario :";
+$show['cancel_transfer_message']="Sei sicuro di voler annulare il passaggio del codice:";
+$show['confirm_transfer_message']="Sei sicuro di voler passare la proprietà di questo oggetto a:";
+$show['modify_item_message']=" Codice oggetto";
+$show['updated_item_message']="Dettagli dell'oggetto aggiornati con successo";
+$show['add_code']="Aggiungi oggetto";
+$show_r['no_items']="Non hai nessun oggetto nella tua casella";
+$show_r['confirm_acceptance']="Sei sicuro di voler accettare questo codice ricevuto: ";
+$show_r['reject_item']="Sei sicuro di voler rifiutare questo codice ricevuto:";
+$show_r['accept_all']="Sei sicuro di voler accettare tutti i codici ricevuti ";
+$show_r['reject_all']="Sei sicuro di voler rifiutare tutti i codici ricevuti ";
+$show['pending']="Non puoi fare questa azione per un oggetto con stato di ";
+$show['no_owners_details']="Puoi contattare il proprietario dell'oggetto cliccando su 'Contatta proprietario'";
+//
+$add['add_code_paragraph']="Registra nuovo oggetto";
+$add['image']="Immagine (facoltativa)";
+$add['no_credit_message']="Non possiedi abbastanza crediti per ottenere nuovi codici";
+$add['verify_item_message']="Si prega di controllare le informazioni inserite prima di procedere";
+$add['your_code']="Il tuo coodice per";
+$add['is']="è";
+$add['credit_request']="Richiesta codice crediti";
+$add['credit_message_body1']="Richiesta codice crediti";
+$add['credit_message_body2']="Mittente :";
+$add['credit_message_body3']="Email :";
+$add['credit_message_body4']="Crediti richiesti :";
+$add['credit_message_body5']="Commenti:";
+$add['error_sending_message']="Errore durante l'invio della tua richiesta, per favore riprova più tardi!!";
+$add['successful_sending_message']="La tua richiesta è stata effettuata con successo, vi contatteremo al più presto";
+$add['manage_codes']="Gestisci i tuoi codici";
+$add['charge_your_credit']="Ricarica i tuoi crediti";
+$add['ask_for_credit']="Richiedi codice crediti";
+$add['ask_for_credit_message']="Richiesta codice crediti";
+$add['no_credit']="Non hai abbastanza crediti";
+$add['register_your_own_code']="Registra il tuo codice";
+//
+$service['title1']="Online Lost &amp; Found ";
+$service['title2']=" ......................................................... for friendly and cooperative life";
+// //
+$service['contents1']="Con il nostro servizio puoi ridurre la possibilità di perdere i tuoi oggetti personali. Come? Le persone che ritrovano i tuoi oggetti ti possono contattare attraverso il nostro sito. </br> Registrandoti avrai la possibilità di ottenere codici che identifichino univocamente e singolarmente una serie di oggetti che possiedi. Il nostro sistema si occuperà di fornirti tutto il necessario per la creazione di etichette personalizzate e di differenti dimensioni. Una volta create a voi basterà stamparle ed applicarle agli oggetti desiderati. L'etichetta conterrà il codice univoco dell'oggetto, l'indirizzo del nostro sito web e alcune istruzioni sulle procedure di utilizzo. Se un giorno smarrisci quell'oggetto e qualcuno poi lo ritrova, può contattarti facilmente attraverso il sito web."; 
+// //
+$service['contents2']="Il sitema mette a tua disposizione etichette di differenti dimensioni che puoi utilizzare in numerosi contesti. Ti basterà stampare e applicare l'etichetta all'oggetto desiderato. Se in un futuro lo perdessi chi lo ritrova potrà contattarti facilmente.";                                                                                                                                                  
+$service['our_service']="Il servizio che offriamo";
+$service['labels']="Free Labels design";
+$service['register']="(Registrati ora)";
+//
+$get_sticker['show_label']=" Il file pdf si aprirà in una nuova pagina del tuo broswer e avrai possibilità di salvarlo."; 
+//
+$special['question_mark']="?";
+//
+$button['cancel']="Svuota campi";
+$button["send"]="Invia";
+$button["home"]="Home";
+$button["send_email"]="Invia un'email";
+$button["back"]="Indietro";
+$button["log_in"]="Log In";
+$button["register"]="Registrazione";
+$button["update"]="Aggiorna";
+$button["change"]="Cambia";
+$button["confirm"]="Conferma";
+$button["main"]="Principale";
+$button["move_to_other"]="Passa ad un altro utente";
+$button["edit"]="Modifica";
+$button["get_sticker"]="Ottieni etichetta";
+$button["cancel_move"]="Cancella richiesta di passaggio";
+$button["proceed"]="Procedi";
+$button["save"]="Salva";
+$button["activate"]="Attiva";
+$button["get_code"]="Ottieni codice";
+$button["continue"]="Continua";
+$button["add_credit"]="Ricarica crediti";
+$button["enter_tracking_code"]="Cerca codice";
+$button["more_details"]="Maggiori dettagli";
+$button["accept_all"]="Accetta tutto";
+$button["reject_all"]="Rifiuta tutto";
+$button["accept"]="Accetta codice";
+$button["reject"]="Rifiuta codice";
+$button["activate"]="Attiva account";
+$button["block"]="Blocca Account";
+$button['get_pdf']="Ottieni etichetta";
+$button['contact_owner']="Contatta utente proprietario";
+$button['show_item']="Mostra oggetto";
+$button['items_table']="Mostra la mia tabella dei codici";
+//
+$alert['item_added']="Oggietto aggiunto con successo";
+//
+$label["email"]="E-Mail";
+$label["message"]="Messaggio";
+$label["name"]="Nome";
+$label["description"]="Descrizione";
+$label["owner_name"]="Nome del proprietario";
+$label["owner_phone"]="Telefono del proprietario";
+$label["owner_email"]="E-mail del proprietario";
+$label["owner_address"]="Indirizzo del proprietario";
+$label["username"]="Username";
+$label["password"]="Password";
+$label["current_password"]="Password attuale";
+$label['surename']="Cognome";
+$label["male"]="Maschio";
+$label["female"]="Femmina";
+$label["phone"]="Telefono";
+$label["country"]="Paese";
+$label["city"]="Città";
+$label["address"]="Indirizzo";
+$label["reg_username"]="Username";
+$label["re_password"]="Reinserire password";
+$label["subject"]="Oggetto";
+$label["write_new_password"]="Inserire una nuova password";
+$label["re_write_new_password"]="Reinserire nuova password";
+$label["track_code"]="Codice di tracciamento";
+$label["select_another_image"]="Seleziona un'altra immagine";
+$label["remove_image"]="Rimuovi immagine dell'oggetto";
+$label["image"]="Immagine (facoltativa)";
+$label['add_credit_code']="Inserisci il codice crediti";
+$label["subject"]="Oggetto";
+$label['num_codes']='Numero dei codici richiesti';  
+$label['comments']="Commenti";
+$label['language']="Lingua";
+$label['status']="Stato";
+$label['error']="Errore";
+$report['error_move_to_your_email']="Non puoi passare un codice a te stesso!!";
+$label['other_city']="Altra città...";
+$label['gender']="Sesso";
+$label['not_found']="Oggetto non trovato";
+$label['login']="Login";
+$label['contact_us']="Contattaci";
+$label['update_profile']="Aggiorna profilo";
+$label['move_code']="Passa codice";
+$label['edit_item']="Modifica oggetto";
+$label['add_item']="Aggiungi oggetto";
+$label['register_code']="Registra un tuo codice";
+$label['ask_credit']="Richiedi crediti";
+$label['received_code']="Codice ricevuto";
+$label['item_name']="Nome oggetto";
+$label['item_description']="Descrizione oggetto";
+$label["owner_details"]="Dettagli utente proprietario";
+//
+$reports['image_size_big']="Le dimensioni dell'immagine sono troppo grandi.";
+$reports['invalid_image_format']="Formato dell'immagine non valido";
+$reports['no_credit']='Non hai abbastanza crediti per ottenere nuovi codici, per favore contatta il fornitore del servizio!!';
+$reports['item_added']='Oggetto aggiunto con successo';
+$reports['invalid_code']='Stai cercando un codice non valido';
+$reports['blocked_owner']="L'utente proprietario ha bloccato il suo account, non ci sono informazioni disponibili sul codice inserito!";
+$reports['not_valid_token_code']='Il codice inserito non è valido.';
+$reports['credit_added']='Crediti aggiunti con successo';
+$reports['updated']="Dettagli dell'oggetto aggiornati con successo";
+$reports['not_active']='Non puoi passare questo codice in quanto non è attivo';
+$reports['invalid_user']="Errore.. Stai provando a passare questo codice ad un utente non valido. Per favore, controlla l'email dell'utente destinatario.";
+$reports['blocked_user']="Errore.. Stai provando a passare questo codice ad un utente bloccato. Per favore controlla lo stato dell'account dell'utente destinatario.";
+$reports['yourself']='Non puoi passare il codice a te stesso';
+$reports['sent_request']="La richiesta di trasferimento del coidce ha avuto successo, il processo si completerà appena il trasferimento sarà approvato dall'utente destinatario"; 
+$reports['cancel_transfer']='Hai annulato il passaggio del codice';
+$reports['received_accepted']='Codice accettato';
+$reports['no_right']="Non hai i requisiti necessari per accettare il passaggio di questo codice!!";
+$reports['accept_codes']='Hai accettato con successo tutti i codici ricevuti';
+$reports['canceled_codes']='Hai cancellato con successo il passaggio di tutti i codici';
+$reports['privacy_updated']='Impostazioni sulla privacy modificate con successo';
+$reports['status_changed']='Hai cambiato il tuo stato con successo';
+$reports['Invalid_query']='Query del database non valida!!';
+$reports['error_image']="Errore nel caricamento dell'immagine!";
+$reports['no_right2']="Non hai i requisiti necessari per cancellare questo trasferimento!!";
+$report['error_move_to_your_email']="Non puoi passare il codice a te stesso!!";
+$reports['cancel_image_upload']=", l'immagine selezionata sarà cancellata ma l'oggetto sarà aggiunto. Puoi cambiare l'immagine dell'oggetto selezionando l'oggetto nella tabella dei codici ti tracciamaneto";
+//
+$uFlex['1']="La registrazione non ha avuto successo";
+$uFlex['2']= "I cambiamenti non possono essere applicati"; 
+$uFlex['3']= "L'account non può essere attivato";
+$uFlex['4']= "Non ci sono account associati con questa email"; 
+$uFlex['5']= "La password non può essere cambiata. La richiesta non può essere validata";
+$uFlex['6']= "Accesso con i cookies fallito";
+$uFlex['7']= "Username o password errati";
+$uFlex['8']= "Il tuo account non può essere attivato. Controlla la tua email per maggiori istruzioni";
+$uFlex['9']= "Il tuo account è stato disattivato. Per favore contatta l'amministratore";
+$uFlex['10']= "Username o password sbagliati";
+$uFlex['11']= "Hash di conferma non valido";
+$uFlex['12']= "La tua identità non può essere confermata";
+$uFlex['13']= "Impossibile salvare la richiesta di conferma";
+$uFlex['14']= "È necessario resettare la password per loggarti";
+$uFlex['Password_Changed']="Password cambiata";
+$uFlex["No_need_update"]="Nessun dato aggiornato!";
+$uFlex["information_updated"]="Informazioni aggiornate!";
+$uFlex["information_not_updated"]="Si è verificato un errore durante l'aggiornamento delle informazioni, Per favore riprova più tardi!";
+//
+$mail_m['contact_subject']="Messaggio";
+$mail_m['sender']="Mittente: ";
+$mail_m['email']="E-Mail: ";
+$mail_m['subject']="Oggetto: ";
+$mail_m['message']="Messaggio: ";
+$mail_m['contact_subject_founder']="Ho trovato il tuo oggetto";
+$mail_m['optional']="(facoltativo)";
+$mail_m['password_retrieve']="Recupero password";
+//
+$mail_m['password_retrieve']="Lost and Found";
+$mail_m['password_retrieve_message']="Gentile utente \n hai richiesto una nuova password per l'accesso a Online Lost and Found. \n Per impostare una nuova password, \n copia e incolla il seguente link nel tuo broswer. \n";
+$reports['no_enough_credits']="Non hai abbastanza crediti per accettare i codici ricevuti";
+$button["send_request"]="Invia richiesta";
+$register['registration_error']="Si è verificato un problema nel processo di registrazione";
+$reports['user_blocked_add_credit1']="Gentile utente, hai inserito un codice crediti errato per 5 volte, questa opzione ti verrà temporaneamente disabilitata"; 
+$reports['user_blocked_add_credit2']=" alle hours:min,sarai nuovamente in grado di accedere a questa pagina."; 
+$activation['activation_title']="Attivazione account";
+$activation['complete']="Il tuo account è stato attivato con successo.";
+$activation['error']="Si è verificato un errore durante l'attivazione.";
+$activation['wrong_hash']="L'indirizzo di attivazione non è corretto.";
+$activation['activation_mail_message']="Gentile utente \n Benvenuto al servizio on-line Lost and Found. \n L'ultimo passo per completare la tua registrazione è quello di attivare \n il tuo account copiando e incollando il seguente link nel tuo broswer \n";
+$activation['activation_mail_subject']="Attivazione di Lost and Found";
+$activation['activation_send']="Grazie per la tua richiesta di registrazione, il codice per l'attivazione del tuo account è stato inviato al tuo indirizzo email.";
+$activation['activation_send_error']="Grazie per la richiesta di registrazione. Purtroppo si è verificato un problema nell'invio del codice di attivazione dell'account. Inviateci un'email di segnalazione, e provvederemo a correggere questo disguido.";
+$reports['not_activated_account']="il tuo account non è stato ancora attivata. Per favore controlla la tua email per l'attivazione del tuo account.";
+$reports['account_has_been_deactivated']="Il tuo account è stato disattivato. Per favore contattaci per maggiori informazioni.";
+$reports['account_has_been_deactivated_by_request']="Account disattivato a causa di una richiesta di reimpostazione della password o di riattivazione dell'account";
+$reports['invalid_user_or_password']="Username o password errati";
+$label["charge_credit"]="Ricarica crediti";
+//
+$message['not_available']="Not Available";
+$status['active']="active";
+$status['pending']="pending";
+$label['enter_track_code']="Enter track code here:";
+$label['enter_captcha_code']="Enter above code here:";
+$captcha['refresh1']="Can't read the image? click";
+$captcha['refresh2']="here";
+$captcha['refresh3']="to refresh";
+$captcha['no_match']="The captcha code does not match!! Try again";
+$button["show_details"]="Show More Details";
+$label['more_details']="More Details";
+$reports['not_authorized']="You are not authorized to perform this process.";
+$service['acknowledgment']="Acknowledgment";
+//
+//Please, don't translate the followings
+$dir['dir']="left";
+$general['logo_title']="nline lost & found";
+$index['track_image']="track_en.png";
+?>

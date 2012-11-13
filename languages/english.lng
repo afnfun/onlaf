@@ -1,0 +1,326 @@
+<?PHP
+//
+$sticker['m1']='To identify the rightful owner of this item if found, apply  this  code';
+$sticker['m2']='at';
+// 
+$grid['title']="My codes list";
+$grid['name']="Name";
+$grid['code']="Code";
+$grid['status']="Status";
+$grid['date']="Date Created";
+$grid['last_update']="Last Update";
+$grid['edit']="Edit";
+$grid['view']="View";
+$grid['get_label']="Get Label";
+$grid['move']="Transfer Ownership";
+$grid['sender']="Sender Name";
+$grid['send_date']="Sending Date";
+$grid_r['title']="Received Codes"; 
+//
+$general['page_title'] = 'Online Lost &amp; Found'; 
+$general['meta_keywords']="lost and found, lost, track, found, itrack, free online lost &amp; found";
+// //
+$general['meta_description']="Free Online Lost and Found service. It helps to keep you in touch with people who found your stuff after being lost. This will reduce the possibility of loosing your personal stuff in city, work, during travel and during disasters.";
+$general['menu_home']="Home";
+$general['menu_register']="Register";
+// //
+$general['menu_service']="About";
+$general['menu_contact']="Contact";
+$general['copyright']="Copyright (c) 2011  All rights reserved.";
+// 
+$login_general['main']="Main";
+$login_general['codes']="Track Codes";
+$login_general['profile']="Settings";
+$login_general['contact']="Contact";
+$login_general['logout']="Log out";
+$login_general['welcome']="Welcome... ";
+$login_general['rec1']="you have received"; 
+$login_general['rec2']="codes, press";
+$login_general['rec3']=" here ";
+$login_general['rec4']="to activate them";
+$login_general['your_credit_is']="Your codes credit: ";
+// 
+$change['change_message']="Please, write down your new password"; 
+//
+$index['message_send_message']="Your message has been sent successfully";
+$index['message_fail_message']="The system has failed in sending your message, please try again later";
+$index['enter_email_message']="Enter your email address";
+$index['send_password']="Send Password";
+$index['send_owner_message']="Contact item owner";
+$index['forgot_password']="Forgot your password?";
+$index['error_sending_message']="An error has occurred while sending your message, please try again later!!";
+$index['successful_sending_message']="Your message has been sent successfully, we will contact you as soon as possible";
+$index['contact_paragraph']="Welcome to our contact gateway. Please, don't hesitate to contact us for any further information or feedback";
+$index['invalid_email']="You have entered an invalid e-mail address!!";
+//
+$register['registered_user']="User Registered! You may Login";
+$register['registration_complete']="Registration completed successfully";
+$register['non_similar_passwords']="Non similar passwords";
+$register['registration_data']="Registration Data"; 
+$register['contact_information']="Contact Information";
+$register['login_information']="Login Information";
+$register['select_country']="Select country...";
+$register['select_language']="Select language...";
+$register['confirm_registration_message']="Please confirm your registration information:";
+$register['new_username_exist']="This username is already used, please select another one";
+$register['new_email_exist']="This e-mail is already used, please select another one";
+//
+$main['successful_contact_message']="Thank you for choosing our service. Your contact message has been received successfully and we will contact you as soon as possible.";
+$main['unsuccessful_contact_message']="An error has occurred while sending your message, please try again later!!";
+//
+$edit['wrong_pass']="Wrong Password!!";
+$edit['unsimilar_pass']="New password verification error, you have entered non similar passwords!!";
+$edit['edit_profile']="Edit Profile";
+$edit['label1']="Name &amp; Gender";
+$edit['label2']="Contact Information";
+$edit['privacy_setting']="Privacy Setting";
+$edit['change_password']="Change Password";
+$edit['block_account']="Account Management";
+$edit['profile_management']="Profile Management";
+$edit['password_change_message']="Password changed successfully";
+$edit['exist_email']="Your updated e-mail is already allocated to another user!! You cannot use it at this moment";
+$edit['exist_user']="Your updated username is already allocated to another user!! You cannot use it at this moment";
+//
+$privacy['privacy_paragraph']="Privacy setting, check the boxes of the information that you want to make available to users trying to contact you after founding your lost items. If you do not select any option, then our web site will be the only way for these users to contact you by sending messages without knowing your e-mail. ";
+//
+$activation['activated_message']="Your account is activated, write down your password in order to block it.";
+$activation['blocked_message']="Your account is blocked, write down your password in order to activate it.";
+$activation['block_question']="Are you sure that you want to BLOCK your account?";
+$activation['activate_question']="Are you sure that you want to ACTIVATE your account?";
+$activation['successful_activation']="Your account has been activated successfully.";
+$activation['successful_block']="Your account has been blocked successfully.";
+$activation['title']="Account Management";
+//
+$show['item_list_message']="Your list of item codes, double click on an item to get more details, edit or change its owner.";
+$show['item_details']="Item Details";
+$show['pending_message1']="You have transfered this item ownership to :";
+$show['pending_message2']=", you can't edit or use it until you cancel the transfer request.";
+$show['send_item_message']="Please enter the new owner's e-mail in order to give him/her the ownership of this item:";
+$show['cancel_transfer_message']="Are you sure that you want to cancel the ownership transfer to:";
+$show['confirm_transfer_message']="Are you sure that you want to transfer the ownership to :";
+$show['modify_item_message']="Item Code";
+$show['updated_item_message']="Item details updated successfully";
+$show['add_code']="Add Item";
+$show_r['no_items']="You don't have any item waiting to be accepted";
+$show_r['confirm_acceptance']="Are you sure that you want to accept this code: ";
+$show_r['reject_item']="Are you sure that you want to reject this code:";
+$show_r['accept_all']="Are you sure that you want to accept all these codes ";
+$show_r['reject_all']="Are you sure that you want to reject all these codes ";
+$show['pending']="You can't do this action for item with the status ";
+$show['no_owners_details']="You can contact the owner of the item by clicking 'Contact Owner'";
+//
+$add['add_code_paragraph']="Please fill down the item information that you want to create the code for";
+$add['image']="Image (optional)";
+$add['no_credit_message']="You do not have enough credits to get new codes";
+$add['verify_item_message']="Please check the item information before to proceed";
+$add['your_code']="Your code for";
+$add['is']="is";
+$add['credit_request']="Credit Code Request";
+$add['credit_message_body1']="Codes credit request";
+$add['credit_message_body2']="Sender:";
+$add['credit_message_body3']="E-Mail:";
+$add['credit_message_body4']="Required Credit:";
+$add['credit_message_body5']="Comments:";
+$add['error_sending_message']="An error occurred while sending your request, please try again later!!";
+$add['successful_sending_message']="Your request has been sent successfully, we will contact you soon to process your request.";
+$add['manage_codes']="Manage Codes";
+$add['charge_your_credit']="Charge Your Credits";
+$add['ask_for_credit']="Ask For Credit Code";
+$add['ask_for_credit_message']="Codes Credit Request";
+$add['no_credit']="Not enough credits";
+$add['register_your_own_code']="Register Your Own Code";
+//
+$service['title1']="Online Lost &amp; Found ";
+$service['title2']=" ......................................................... for friendly and cooperative life";
+// //
+$service['contents1']="With our service, you can decrease the possibility to lose your stuff. How? People who found it can contact you through our website.</br> The idea is to register and get a unique identifier (code) for each item that you want to be traceable. Our system will support you with nice different size label designs, all what you need is to print and attach one of them to your stuff. Each label contains the unique code of the item, our website URL and a two-lines instruction. If somebody found your stuff, he can contact you easily using our secure web interface.";
+// //
+$service['contents2']="The system supports you with friendly label designs of different sizes that could be used for different purposes. All what you need is to print and attach one of them to the object that could be lost, so in such a case, people who found it can contact you easily.";
+$service['our_service']="Our Service";
+$service['labels']="Free Label Designs";
+$service['register']="(Register now)";
+//
+$get_sticker['show_label']=" Your browser will open labels in a new page or download them to your computer"; 
+//
+$special['question_mark']="?";
+//
+$button['cancel']="Cancel";
+$button["send"]="Send";
+$button["home"]="Home";
+$button["send_email"]="Send an e-mail";
+$button["back"]="Back";
+$button["log_in"]="Log In";
+$button["register"]="Register";
+$button["update"]="Update";
+$button["change"]="Change";
+$button["confirm"]="Confirm";
+$button["main"]="Main";
+$button["move_to_other"]="Transfer Ownership";
+$button["edit"]="Edit";
+$button["cancel_move"]="Cancel Transfer Ownership";
+$button["proceed"]="Proceed";
+$button["save"]="Save";
+$button["activate"]="Activate";
+$button["get_code"]="Get Code";
+$button["continue"]="Continue";
+$button["add_credit"]="Add Credit";
+$button["enter_tracking_code"]="Search Code";
+$button["more_details"]="More Details";
+$button["accept_all"]="Accept All";
+$button["reject_all"]="Reject All";
+$button["accept"]="Accept Code";
+$button["reject"]="Reject Code";
+$button["activate"]="Activate Account";
+$button["block"]="Block Account";
+$button['contact_owner']="Contact Owner";
+$button['show_item']="Show Item";
+$button['items_table']="Show My Codes Table";
+//
+$alert['item_added']="Item added successfully";
+//
+$label["email"]="E-Mail";
+$label["message"]="Message";
+$label["name"]="First Name";
+$label["description"]="Description";
+$label["owner_name"]="Owner Name";
+$label["owner_phone"]="Owner Phone";
+$label["owner_email"]="Owner E-mail";
+$label["owner_address"]="Owner Address";
+$label["username"]="Username";
+$label["password"]="Password";
+$label["current_password"]="Current Password";
+$label['surename']="Surname";
+$label["male"]="male";
+$label["female"]="female";
+$label["phone"]="Phone";
+$label["country"]="Country";
+$label["city"]="City";
+$label["address"]="Address";
+$label["reg_username"]="Username";
+$label["re_password"]="Retype password";
+$label["subject"]="Subject";
+$label["write_new_password"]="Write the new password";
+$label["re_write_new_password"]="Re-write the new password";
+$label["track_code"]="Track Code";
+$label["select_another_image"]="Select another image";
+$label["remove_image"]="Remove item image";
+$label["image"]="Image (optional)";
+$label['add_credit_code']="Add credit code";
+$label["subject"]="Subject";
+$label['num_codes']='Number of requested codes';  
+$label['comments']="Comments";
+$label['language']="Language";
+$label['status']="Status";
+$label['error']="Error";
+$report['error_move_to_your_email']="You can't transfer ownership to yourself!!";
+$label['other_city']="Other city...";
+$label['gender']="Gender";
+$label['not_found']="Item not found";
+$label['login']="Login";
+$label['contact_us']="Contact us";
+$label['update_profile']="Update profile";
+$label['move_code']="Transfer Ownership";
+$label['edit_item']="Edit Item";
+$label['add_item']="Add Item";
+$label['register_code']="Register Your Own Code";
+$label['ask_credit']="Ask For Credit";
+$label['received_code']="Received Code";
+$label['item_name']="Item Name";
+$label['item_description']="Item Description";
+$label["owner_details"]="Owner Details";
+//
+$reports['image_size_big']=' Image file size is too big.';
+$reports['invalid_image_format']="Invalid image file format";
+$reports['no_credit']='You don\'t have enough credit to get new codes, please contact our service provider!!';
+$reports['item_added']='Item added successfully';
+$reports['invalid_code']='You are looking for an invalid code';
+$reports['blocked_owner']='The owner has blocked his/her account, no information is available about the entered code!';
+$reports['not_valid_token_code']='The entered code is not valid.';
+$reports['credit_added']='Credit added successfully';
+$reports['updated']='Item details updated successfully.';
+$reports['not_active']='You can not transfer the ownership of this code as it is not active code';
+$reports['invalid_user']='Error... You are trying to transfer a code ownership to an invalid user. Please, check the e-mail of the destination user.';
+$reports['blocked_user']='Error... You are trying to transfer a code ownership to a blocked user. Please, check the account status of the destination user.';
+$reports['yourself']='You can\'t transfer code ownership to yourself!!';
+$reports['sent_request']='You have successfully requested a code transfer, the process will be completed after being approved by the destination user';
+$reports['cancel_transfer']='You have successfully canceled the code transfer ';
+$reports['received_accepted']='Received code accepted successfully';
+$reports['no_right']='You don\'t have the right to accept this code anymore, sender my canceled sending request before you complete code acceptance process!!';
+$reports['accept_codes']='You have successfully accepted all the received codes';
+$reports['canceled_codes']='You have successfully canceled all the code transfer requests';
+$reports['privacy_updated']='Privacy settings changed successfully';
+$reports['status_changed']='You have successfully changed your status';
+$reports['Invalid_query']='Invalid Database query!!';
+$reports['error_image']='An error occurred while uploading the image!';
+$reports['no_right2']='You don\'t have the right to cancel transfer ownership of this code. Destination user already accept it !!';
+$report['error_move_to_your_email']="You can't transfer ownership to yourself!!";
+$reports['cancel_image_upload']=", the selected image will be ignored but the item will be added. You can change its image by modifying it through your codes list";
+//
+$uFlex['1']="New user registration failed";
+$uFlex['2']= "The changes could not be made"; 
+$uFlex['3']= "Account could not be activated";
+$uFlex['4']= "We don't have any account with this email"; 
+$uFlex['5']= "The password could not be changed. The request can't be validated";
+$uFlex['6']= "Logging with cookies failed";
+$uFlex['7']= "Wrong user name or password";
+$uFlex['8']= "Your account has not been activated. Check your e-mail for instructions";
+$uFlex['9']= "Your account has been blocked. Please contact the administrator";
+$uFlex['10']= "Wrong username or password";
+$uFlex['11']= "The confirmation link is invalid";
+$uFlex['12']= "Your identification could not be confirmed";
+$uFlex['13']= "Confirmation request saving failed";
+$uFlex['14']= "You need to reset your password to log in";
+$uFlex['Password_Changed']="Password changed";
+$uFlex["No_need_update"]="The updated information has not changed. No need to update!";
+$uFlex["information_updated"]="Information updated!";
+$uFlex["information_not_updated"]="An unknown error occurred while updating information, please try again later!";
+//
+$mail_m['contact_subject']="Contact Message";
+$mail_m['sender']="Sender: ";
+$mail_m['email']="E-Mail: ";
+$mail_m['subject']="Subject: ";
+$mail_m['message']="Message: ";
+$mail_m['contact_subject_founder']="I found your item";
+$mail_m['optional']="(optional)";
+$mail_m['password_retrieve']="Password Retrieve";
+//
+$mail_m['password_retrieve']="Lost and Found";
+$mail_m['password_retrieve_message']="Dear User \n You have requested a new password for your Online Lost and Found account. \n In order to set a new password, \n copy and paste the following link into your browser:\n";
+$reports['no_enough_credits']="You don't have enough credits to accept all the received codes";
+$button["send_request"]="Send Request";
+$register['registration_error']="An error occured in the registration process";
+$reports['user_blocked_add_credit1']="Dear user, you have entered a wrong credit code for 5 times during this session. Your account is temporarily blocked from adding credits. After "; 
+$reports['user_blocked_add_credit2']=" (hours:min), you will be able to access the credit adding page."; 
+$activation['activation_title']="Account Activation";
+$activation['complete']="Your account has been successfully activated.";
+$activation['error']="An error occurred in the activation process.";
+$activation['wrong_hash']="The activation link is not correct.";
+$activation['activation_mail_message']="Dear User \n Welcome to the Online Lost and Found Service. \n The last step to complete your registration is to activate \n your account by copying and pasting the following link into your web browser:\n";
+$activation['activation_mail_subject']="Lost and Found Activation";
+$activation['activation_send']="Thank you for your registration request, your account activation code has been sent to you by e-mail.";
+$activation['activation_send_error']="Thank you for your registration request. Unfortunately, an error occurred while sending your account activation code. Please, report us this problem, identifying yourself with your email address.";
+$reports['not_activated_account']="Your account has not been activated yet. Please check your e-mails to activate your account.";
+$reports['account_has_been_deactivated']="Your account has been deactivated by our system. Please, contact us for more information.";
+$reports['account_has_been_deactivated_by_request']="Account deactivated due to a password reset or reactivation request";
+$reports['invalid_user_or_password']="Invalid username or password.";
+$label["charge_credit"]="Charge Credits";
+//
+$message['not_available']="Not Available";
+$status['active']="active";
+$status['pending']="pending";
+$label['enter_track_code']="Enter track code here:";
+$label['enter_captcha_code']="Enter above code here:";
+$captcha['refresh1']="Can't read the image? click";
+$captcha['refresh2']="here";
+$captcha['refresh3']="to refresh";
+$captcha['no_match']="The captcha code does not match!! Try again";
+$button["show_details"]="Show More Details";
+$label['more_details']="More Details";
+$reports['not_authorized']="You are not authorized to perform this process.";
+$service['acknowledgment']="Acknowledgment";
+//
+//Please, don't translate the followings
+$dir['dir']="left";
+$general['logo_title']="nline lost &amp; found";
+$index['track_image']="track_en.png";
+?>
