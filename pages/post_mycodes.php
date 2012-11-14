@@ -1,6 +1,7 @@
 <?php
 //if(isset($_POST['seid'])) {session_id($_POST['seid']);}
 session_start();
+include ("../includes/config.php");
 //
 $page = isset($_POST['page']) ? $_POST['page'] : 1;
 $rp = isset($_POST['rp']) ? $_POST['rp'] : 10;
@@ -11,29 +12,10 @@ $qtype = isset($_POST['qtype']) ? $_POST['qtype'] : false;
 // /*-- To use the SQL, remove this block
 $usingSQL = true;
 function runSQL($rsql) {
-//
-        $db['default']['hostname'] = "localhost";
-        $db['default']['username'] = 'root';
-        $db['default']['password'] = "root";
-        $db['default']['database'] = "info2";
-//
-        $db['live']['hostname'] = 'localhost';
-        $db['live']['username'] = 'root';
-        $db['live']['password'] = 'root';
-        $db['live']['database'] = 'info2';
-//
-        $active_group = 'default';
-//
-        $base_url = "http://".$_SERVER['HTTP_HOST'];
-        $base_url .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
-//
-        $connect = mysql_connect($db[$active_group]['hostname'],$db[$active_group]['username'],$db[$active_group]['password']) or die ("Error: could not connect to database");
-        $db = mysql_select_db($db[$active_group]['database']);
- //      
-        $result = mysql_query($rsql) or die ('test');
+        $result = mysql_query($rsql);
         return $result;
-        mysql_close($connect);
-}
+        
+        }
 //
 function countRec($fname,$tname,$where) {
         $sql = "SELECT count($fname) FROM $tname $where";
