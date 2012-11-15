@@ -1,6 +1,6 @@
 # Personal config files
 databaseConfig.php
-nbproject
+nbproject/*
 # Backup files
 *~
 *.backup
