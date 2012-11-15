@@ -1,6 +1,15 @@
 # Personal config files
 databaseConfig.php
-nbproject/*
+
+# IDE-specific config files
+nbproject
+
 # Backup files
 *~
+*.bak
 *.backup
+Thumbs.db
+.DS_Store
+
+# Other versionning system data
+.svn
